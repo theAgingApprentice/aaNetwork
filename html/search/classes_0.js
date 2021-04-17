@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['aatemplate_2',['aaTemplate',['../classaa_template.html',1,'']]]
+  ['aanetwork_1',['aaNetwork',['../classaa_network.html',1,'']]]
 ];

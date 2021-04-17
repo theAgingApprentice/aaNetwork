@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>aaTemplate: src/aaTemplate.h Source File</title>
+<title>aaNetwork: src/aaTemplate.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="aaLogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">aaTemplate
+   <div id="projectname">aaNetwork
    </div>
-   <div id="projectbrief">Brief explanation of what class does.</div>
+   <div id="projectbrief">Manage wifi connection to access point.</div>
   </td>
  </tr>
  </tbody>
@@ -72,35 +72,67 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef aaTemplate_h </span><span class="comment">// Start precompiler code block. </span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define aaTemplate_h </span><span class="comment">// Precompiler macro used to avoid dupicate inclusion of this code.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/************************************************************************************</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * @section aaTemplateIncludes Included libraries.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> ************************************************************************************/</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span> <span class="comment">// Arduino Core for ESP32. Comes with Platform.io.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/************************************************************************************</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @class Read/write to/from flash RAM.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> ************************************************************************************/</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classaa_template.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classaa_template.html">aaTemplate</a> <span class="comment">// Indicate that we are extending LiquidCrystal_I2C class with our class </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classaa_template.html#a9d9ee35f134bfbd6a17d67473119b512">aaTemplate</a>(); <span class="comment">// Default constructor for this class.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classaa_template.html#a9d9ee35f134bfbd6a17d67473119b512">aaTemplate</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* var1); <span class="comment">// Second form of class constructor.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classaa_template.html#a040c3d9cfdad40001895c93f53807aa9">~aaTemplate</a>(); <span class="comment">// Class destructor.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordtype">void</span> examplePublicFunction(<span class="keywordtype">int</span>); <span class="comment">// This is a public class.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   <span class="keyword">private</span>: </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordtype">bool</span> _examplePrivateFunction(); <span class="comment">// This is a private class.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}; <span class="comment">//class aaTemplate</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">extern</span> <a class="code" href="classaa_template.html">aaTemplate</a> myRefVar; <span class="comment">// Expose all public variables and methods for libraries.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// End of precompiler protected code block</span></div>
-<div class="ttc" id="aclassaa_template_html"><div class="ttname"><a href="classaa_template.html">aaTemplate</a></div><div class="ttdef"><b>Definition:</b> aaTemplate.h:17</div></div>
-<div class="ttc" id="aclassaa_template_html_a040c3d9cfdad40001895c93f53807aa9"><div class="ttname"><a href="classaa_template.html#a040c3d9cfdad40001895c93f53807aa9">aaTemplate::~aaTemplate</a></div><div class="ttdeci">~aaTemplate()</div><div class="ttdef"><b>Definition:</b> aaTemplate.cpp:55</div></div>
-<div class="ttc" id="aclassaa_template_html_a9d9ee35f134bfbd6a17d67473119b512"><div class="ttname"><a href="classaa_template.html#a9d9ee35f134bfbd6a17d67473119b512">aaTemplate::aaTemplate</a></div><div class="ttdeci">aaTemplate()</div><div class="ttdef"><b>Definition:</b> aaTemplate.cpp:47</div></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef aaNetwork_h </span><span class="comment">// Start precompiler code block. </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define aaNetwork_h </span><span class="comment">// Precompiler macro used to avoid dupicate inclusion of this code.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/************************************************************************************</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * @section aaNetworkIncludes Included libraries.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> ************************************************************************************/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span> <span class="comment">// Arduino Core for ESP32. Comes with Platform.io.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;WiFi.h&gt;</span> <span class="comment">// Required to connect to WiFi network. Comes with Platform.io.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;aaFormat.h&gt;</span> <span class="comment">// Collection of handy format conversion functions.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;known_networks.h&gt;</span> <span class="comment">// Defines Access points and passwords that the robot can scan for and connect to.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;ESP32Ping.h&gt;</span> <span class="comment">// Verify IP addresses. https://github.com/marian-craciunescu/ESP32Ping.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">enum</span> signalStrength </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    amazing = -30, </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    veryGood = -67, </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    okay = -70, </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    notGood = -80, </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    unusable = -90, </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}; <span class="comment">//enum</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> int8_t HOST_NAME_SIZE = 20; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/************************************************************************************</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * @class Manage wifi connection.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> ************************************************************************************/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classaa_network.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classaa_network.html">aaNetwork</a> </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classaa_network.html">aaNetwork</a>(); <span class="comment">// Default class constructor.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="classaa_network.html">aaNetwork</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* prefix); <span class="comment">// Second form of class constructor.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      ~<a class="code" href="classaa_network.html">aaNetwork</a>(); <span class="comment">// Class destructor.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">void</span> getUniqueName(<span class="keywordtype">char</span> *ptrNameArray); <span class="comment">// Construct a name that is sure to be unique on the network.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* connectionStatus(wl_status_t status); <span class="comment">// Provide human readable text for wifi connection status codes. </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordtype">void</span> cfgToConsole(); <span class="comment">// Send wifi connection details to console.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordtype">char</span>* getSSID(<span class="keywordtype">void</span>); <span class="comment">// Retireve Access Point SSID.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordtype">char</span>* getPSWD(<span class="keywordtype">void</span>); <span class="comment">// Retrieve Access Point password.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordtype">void</span> connect(); <span class="comment">// Connect to Wifi.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordtype">long</span> rfSignalStrength(int8_t points); <span class="comment">// Collect an average WiFi signal strength. </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* evalSignal(int16_t signalStrength); <span class="comment">// Return human readable assessment of signal strength.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">bool</span> pingIP(IPAddress address); <span class="comment">// Ping IP address and return response. Assume 1 ping.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordtype">bool</span> pingIP(IPAddress address, int8_t numPings); <span class="comment">// Ping IP address and return response. User specified num pings.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* _lookForAP(); <span class="comment">// Scan 2.4GHz radio spectrum for known Access Point.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* _translateEncryptionType(wifi_auth_mode_t encryptionType); <span class="comment">// Provide human readable wifi encryption method.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">static</span> <span class="keywordtype">void</span> _wiFiEvent(WiFiEvent_t event, WiFiEventInfo_t info); <span class="comment">// Event handler for wifi.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* _unknownAP = <span class="stringliteral">&quot;unknown&quot;</span>; <span class="comment">// Comparitor used to check if a valid AP was found.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* _ssid; <span class="comment">// SSID of Access Point selected to connect to over Wifi. </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* _password; <span class="comment">// Password of Access Point selected to connect to over Wifi.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      aaFormat _convert; <span class="comment">// Accept various variable type/formats and return a different variable type/format.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      int8_t _SSIDIndex = 0; <span class="comment">// Contains the SSID index number from the known list of APs.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordtype">char</span> _uniqueName[HOST_NAME_SIZE]; <span class="comment">// Character array that holds unique name for Wifi network purposes. </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordtype">char</span> *_uniqueNamePtr = &amp;_uniqueName[0]; <span class="comment">// Pointer to first address position of unique name character array.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* _HOST_NAME_PREFIX; <span class="comment">// Prefix for unique network name. </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}; <span class="comment">//class aaNetwork</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">extern</span> <a class="code" href="classaa_network.html">aaNetwork</a> myRefVar; <span class="comment">// Expose all public variables and methods for libraries.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// End of precompiler protected code block</span></div>
+<div class="ttc" id="aclassaa_network_html"><div class="ttname"><a href="classaa_network.html">aaNetwork</a></div><div class="ttdef"><b>Definition:</b> aaTemplate.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
