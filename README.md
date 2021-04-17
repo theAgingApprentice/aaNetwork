@@ -1,51 +1,7 @@
-<!-- Cloning Instructions -->
-<span style="background-color: green">
-This is a template repository to be cloned when making a class intended to become part of the Aging Apprentice API (3API) class library. Instructions for using this template repository are as follows.  
-
-## Make repo on Github
-- Put steps here on how to clone a repo to another repo in Github.
-
-## Make local repo
-- Navigate to the project folder on your local hard drive.
-- Issue the command `git clone https://github.com/va3wam/{project name}`
-- Navigate into the newly created directory `cd {project name}`
-- Create a local gh-pages branch to host Doxygen output
-   - Issue the command `git checkout --orphan gh-pages`
-   - Issue the command `git reset --hard`
-   - Issue the command `git commit --allow-empty -m "Initializing gh-pages branch"`
-- Invite new contributors if required to do the next steps. 
-   - Go to your new Github repo with yoour browser  
-   - Settings/Manage Access/Invite a collaborator/enter name
-- Push local gh-pages branch to origin on Github 
-   - Back on local machine issue the command `git push origin gh-pages`
-   - Issue the command `git checkout main`
-
-## Edit Doxyfile
-There is a file called Doxyfile in the root of the repository. Make the following edits.
-- PROJECT_NAME           = {project name}
-- PROJECT_BRIEF          = "Brief explanation of what class does."
-
-## Source Files
-Write the library using the tempates provided in the src direcotry off the root of this repo.
-
-## Examples
-Write at least one example script using the template in examples/simpleExample off the root of this repo. 
-
-## Edit this README.md file
-* The basic edits that you should make to this README file are noted below in bold text labelled **Edit 1** through **Edit 5**. You may wish to make additional edits as you see fit.
-* Once you are done with these instructions you can delete them starting from the top of the file and ending with the line below. What remains will be a well formatted README file. 
-
-<!-- This is where your README file starts. Delete everyth0ing above -->
----
-</span>
-
-
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Doxygen Action](https://github.com/theAgingApprentice/aaChip/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/theAgingApprentice/aaChip/actions/workflows/main.yml)
 
-**Edit 1 - update title**
-
-# Put your title here 
+# Wifi connection management class  
 
 ## Table of contents
 * [Overview](#Overview)
@@ -60,22 +16,16 @@ Write at least one example script using the template in examples/simpleExample o
 * [Acknowledgements](#Acknowledgements)
 
 ## Overview
-**Edit 2 - Update this block of text with an explanation of what the class you are making does. For example:** 
-
-This repository contains an Arduino class that does winderful things. This is part of a series of classes 
+This repository contains an Arduino class that handles the wifi connection to an Access Point. This is part of a series of classes 
 made to support a standard set of APIs for experimental robot platforms. 
 
 ## Dependencies
-This class depends on <a href="https://github.com/espressif/arduino-esp32">
-Arduino.h</a> being present on your system. This is the Arduino core library
-that comes bundled with PlatformIO.
-
-**Edit 3 - Add other dependencies here.**
+This class depends on the following libraries being present on your system:
+- [Arduino.h](https://github.com/espressif/arduino-esp32"). This is the Arduino core library that comes bundled with PlatformIO.
+- wifi.h. This is required to connect to WiFi network. Comes bundled in the Arduino core library.
 
 ## Author
 Written by Old Squire for the Aging Apprentice.
-
-**Edit 4. Update author information above  and remove this line.**
 
 ## Development environment
 This library was written using the following tools:
@@ -101,7 +51,7 @@ time the **main** branch gets updated. The output from Doxygen is placed in the
 tags and assorted embedded comments from the code itself. This documentation 
 can be viewed in your web browser 
 ** Edit 5 - Update URL for Doxygen online docs **
-[here](https://theagingapprentice.github.io/aaTemplate/html/index.html).    
+[here](https://theagingapprentice.github.io/aaNetwork/html/index.html).    
 
 ## Microprocessor compatibility
 This library has only been tested on the [Adafruit Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) development board containing the [Espressif ESP WROOM32 SOC](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf) featuring a pair of [Cadence/Xtensa®32-bit LX6 microprocessors](https://mirrobo.ru/wp-content/uploads/2016/11/Cadence_Tensillica_Xtensa_LX6_ds.pdf). 
@@ -115,7 +65,7 @@ your computer.
 3. Issue the command `git remote`. If you get back the response *origin* then 
 you are all set. If you get a blank response back then you must set up an 
 association to the remote repository by issuing the command `git remote add 
-origin https://github.com/theAgingApprentice/aaChip.git` to set up the remote. 
+origin https://github.com/theAgingApprentice/aaNetwork.git` to set up the remote. 
 
 ## Running tests
 As part of our CI/CD software development process we want to run automated tests 
@@ -161,10 +111,10 @@ use TravisCI.
 
 ## Releases
 * We use the [SemVer](http://semver.org/) numbering scheme for our releases. 
-* The latest stable release is [v1.0.0](https://github.com/theAgingApprentice/aaFlash/releases/tag/v1.0.0). 
+* The latest stable release is [v1.0.0](https://github.com/theAgingApprentice/aaNetwork/releases/tag/v1.0.0). 
 
 ## Examples
-There is an [example sketch](https://github.com/theAgingApprentice/aaFlash/blob/main/examples/simpleExample/simpleExample.cpp) that shows you how to use this class.   
+There is an [example sketch](https://github.com/theAgingApprentice/aaNetwork/blob/main/examples/simpleExample/simpleExample.cpp) that shows you how to use this class.   
 
 ## Acknowledgements
 * The many folks involved in porting the Arduino libraries over to the ESP32 SOC.
