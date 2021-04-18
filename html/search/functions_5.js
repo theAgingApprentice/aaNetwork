@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rfsignalstrength_35',['rfSignalStrength',['../classaa_network.html#a2939f0d11f02f932b3a1406de14c3876',1,'aaNetwork']]]
+  ['jointwoconstchar_44',['joinTwoConstChar',['../classaa_format.html#a9bd278c97225bff5cc5cbd77e27eb8ca',1,'aaFormat']]]
 ];

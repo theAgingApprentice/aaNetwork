@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unusable_18',['unusable',['../aa_network_8h.html#a480211344cd5a14a61f361e2ff6c74ccaf565a3dd43b707e28ed128a9d42aef3d',1,'aaNetwork.h']]]
+  ['rfsignalstrength_20',['rfSignalStrength',['../classaa_network.html#a2939f0d11f02f932b3a1406de14c3876',1,'aaNetwork']]]
 ];

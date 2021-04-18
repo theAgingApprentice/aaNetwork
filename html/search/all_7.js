@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['ping_5foption_12',['ping_option',['../structping__option.html',1,'']]],
-  ['ping_5fresp_13',['ping_resp',['../structping__resp.html',1,'']]],
-  ['pingclass_14',['PingClass',['../class_ping_class.html',1,'']]],
-  ['pingip_15',['pingIP',['../classaa_network.html#a25454f1c10061c1d600820ad113c006d',1,'aaNetwork::pingIP(IPAddress address)'],['../classaa_network.html#ae02e40ab01ca4703fb99fdb413e7e81f',1,'aaNetwork::pingIP(IPAddress address, int8_t numPings)']]]
+  ['nocolonmac_13',['noColonMAC',['../classaa_format.html#a0ea33dd911eaf84c599044bc4c9e85d5',1,'aaFormat']]],
+  ['notgood_14',['notGood',['../aa_network_8h.html#a480211344cd5a14a61f361e2ff6c74ccadb5a77058f7ea70c057f6b502825d848',1,'aaNetwork.h']]]
 ];

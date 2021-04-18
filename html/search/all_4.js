@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['myrefvar_9',['myRefVar',['../aa_network_8h.html#a69f6a49570a394833f83e59db5542093',1,'simpleExample.cpp']]]
+  ['iptobytearray_9',['ipToByteArray',['../classaa_format.html#a464b03d67714abf7ec5cd13f47a65811',1,'aaFormat']]],
+  ['iptostring_10',['ipToString',['../classaa_format.html#ace63e200e90fe1858650882e35ee7a8b',1,'aaFormat']]]
 ];

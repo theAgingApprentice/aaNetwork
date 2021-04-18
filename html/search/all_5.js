@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notgood_10',['notGood',['../aa_network_8h.html#a480211344cd5a14a61f361e2ff6c74ccadb5a77058f7ea70c057f6b502825d848',1,'aaNetwork.h']]]
+  ['jointwoconstchar_11',['joinTwoConstChar',['../classaa_format.html#a9bd278c97225bff5cc5cbd77e27eb8ca',1,'aaFormat']]]
 ];

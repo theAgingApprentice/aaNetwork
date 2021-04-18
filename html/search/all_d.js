@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eaanetwork_21',['~aaNetwork',['../classaa_network.html#ac42bfbdba98e7657887754e88e052f68',1,'aaNetwork']]]
+  ['verygood_24',['veryGood',['../aa_network_8h.html#a480211344cd5a14a61f361e2ff6c74cca4dd22dd59a87807427e6637dcb8c7c7c',1,'aaNetwork.h']]]
 ];
