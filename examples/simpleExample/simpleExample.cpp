@@ -39,12 +39,12 @@
  * IN THE SOFTWARE.  
  *****************************************************************************/ 
 #include <Arduino.h> // Arduino Core for ESP32. Comes with Platform.io.
-#include <aaTemplate.h> // Store values that persist past reboot.
+#include <aaNetwork.h> // Store values that persist past reboot.
 
 /**
  * Define global objects.
  * =================================================================================*/
-aaTemplate myRefVar; // Explain what this object reference is for. 
+aaNetwork wifi("EXAMPLE"); // Explain what this object reference is for. 
 
 /**
  * @brief Initialize the serial output with the specified baud rate measured in bits 
@@ -62,10 +62,20 @@ void setupSerial()
  * =================================================================================*/
 void setup()
 {
-   // Declare variables.
+   char uniqueName[HOST_NAME_SIZE]; // Character array that holds unique name. 
+   char *uniqueNamePtr = uniqueName; // Pointer to unique name character array.
    setupSerial(); // Set serial baud rate. 
    Serial.println("<setup> Start of setup");
-   // Call stuff here.
+   wifi.connect(); // Connect to a known WiFi network.
+   wifi.getUniqueName(uniqueNamePtr);
+   Serial.print("<setup> Unique name = ");
+   Serial.println(uniqueName);
+
+   long tmp =  wifi.rfSignalStrength(1);
+   Serial.print("<setup> Signal strength in db = ");
+   Serial.println(tmp);
+
+   wifi.cfgToConsole(); // Dump network info to console.
    Serial.println("<setup> End of setup");
 } // setup()
 

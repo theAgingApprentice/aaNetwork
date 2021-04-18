@@ -72,6 +72,22 @@ aaNetwork::~aaNetwork()
 } // aaNetwork::aaNetwork()
 
 /**
+ * @brief Report the status of the wifi connection.
+ * @return bool true when connected, false when any other status.
+ =============================================================================*/
+bool aaNetwork::areWeConnected()
+{ 
+   if(WiFi.status() == WL_CONNECTED)
+   {
+      return true;
+   } // if
+   else
+   {
+      return false;
+   } // else
+} // aaNetwork::areWeConnected()
+
+/**
  * @brief Construct a name that is sure to be unique on the network.
  * @param char* Pointer to name variable in main.
  =============================================================================*/
@@ -84,13 +100,14 @@ void aaNetwork::getUniqueName(char *ptrNameArray)
    myMacChar = macAdd.c_str(); // Convert to pointer to const char array   
    _convert.macToByteArray(myMacChar, myMacByte); // Convert to Byte array
    _convert.joinTwoConstChar(_HOST_NAME_PREFIX, _convert.noColonMAC(macAdd), _uniqueNamePtr);
+   strcpy(ptrNameArray, _uniqueName); // Copy unique name to variable pointer from main.
 } // aaNetwork::getUniqueName()
 
 /**
  * @brief Provide human readable text for wifi connection status codes.
  * @param wl_status_t wifi connection status code.
  =============================================================================*/
-const char* aaNetwork::connectionStatus(wl_status_t status)
+const char* aaNetwork::_connectionStatus(wl_status_t status)
 {
    switch(status) 
    {
@@ -104,7 +121,7 @@ const char* aaNetwork::connectionStatus(wl_status_t status)
       case WL_DISCONNECTED: return "WL_DISCONNECTED";
       default: return "UNKNOWN_STATUS";
    } //switch
-} // aaNetwork::connectionStatus()
+} // aaNetwork::_connectionStatus()
  
 /**
  * @brief Send wifi connection details to console.
@@ -180,7 +197,7 @@ void aaNetwork::connect()
       Serial.print(" with status code "); 
       Serial.print(WiFi.status());
       Serial.print(" (");
-      Serial.print(connectionStatus(WiFi.status())); 
+      Serial.print(_connectionStatus(WiFi.status())); 
       Serial.println(")"); 
    } //else
 } // aaNetwork::connect()
@@ -310,7 +327,7 @@ const char* aaNetwork::_translateEncryptionType(wifi_auth_mode_t encryptionType)
  * @param WiFiEvent_t Type of event that triggered this handler.
  * @param WiFiEventInfo_t Additional information about the triggering event.
  =============================================================================*/
-static void aaNetwork::_wiFiEvent(WiFiEvent_t event, WiFiEventInfo_t info)
+void aaNetwork::_wiFiEvent(WiFiEvent_t event, WiFiEventInfo_t info)
 {
    switch(event) 
    {
