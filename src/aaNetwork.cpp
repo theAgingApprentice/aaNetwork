@@ -331,6 +331,9 @@ void aaNetwork::_wiFiEvent(WiFiEvent_t event, WiFiEventInfo_t info)
 {
    switch(event) 
    {
+      case SYSTEM_EVENT_STA_STOP: //  Likly due to OTA update.
+         Serial.println("<aaNetwork::WiFiEvent> Detected SYSTEM_EVENT_STA_STOP");            
+         break;
       case SYSTEM_EVENT_AP_START:
 //         WiFi.softAP(AP_SSID, AP_PASS); //can set ap hostname here   
 //         WiFi.softAPenableIpV6(); //enable ap ipv6 here
